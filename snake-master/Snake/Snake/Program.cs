@@ -7,7 +7,7 @@ using System.Threading;
 namespace Snake
 {
 	class Program
-	{
+		{
 		static void Main( string[] args )
 		{
 			//Console.SetBufferSize( 80, 25 );
@@ -16,7 +16,7 @@ namespace Snake
 			walls.Draw();
 
 			// Отрисовка точек			
-			Point p = new Point( 4, 5, '*' );
+			Point p = new Point( 4, 5, '.' );
 			Snake snake = new Snake( p, 4, Direction.RIGHT );
 			snake.Draw();
 
