@@ -27,7 +27,7 @@ namespace Snake
 			}
 			return false;
 		}
-
+        // I dont understand
 		private bool IsHit( Point point )
 		{
 			foreach(var p in pList)
