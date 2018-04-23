@@ -59,7 +59,7 @@ namespace Snake
 			Console.ForegroundColor = ConsoleColor.Red;
 			Console.SetCursorPosition( xOffset, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
-			WriteText( "GAME OVER", xOffset + 1, yOffset++ );
+			WriteText("GIOCO FINITO", xOffset + 1, yOffset++ );
 			yOffset++;
 			WriteText( "Автор: Евгений Картавец", xOffset + 2, yOffset++ );
 			WriteText( "Специально для GeekBrains", xOffset + 1, yOffset++ );
