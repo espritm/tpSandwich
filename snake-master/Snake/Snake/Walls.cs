@@ -14,7 +14,7 @@ namespace Snake
 		{
 			wallList = new List<Figure>();
 
-            // Toto comprend rien
+            //BA EN FAITE JE VEUX CE COMMENTAIRE !!
             DevModeLine devMode = new DevModeLine(0, mapWidth - 2, 0, '-');
             HorizontalLine upLine = new HorizontalLine( 0, mapWidth - 2, 1, '+' );
 			HorizontalLine downLine = new HorizontalLine( 0, mapWidth - 2, mapHeight - 1, '+' );

@@ -12,6 +12,8 @@ namespace Snake
 
 		public void Draw()
 		{
+            //mon commentaire
+			// draw lines
             //dessine les lignes
 			foreach ( Point p in pList )
 			{
