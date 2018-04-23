@@ -33,14 +33,14 @@ namespace Snake
 				if(snake.Eat( food ) )
 				{
 					food = foodCreator.CreateFood();
-					food.Draw();
+					food.Draw();                    
 				}
 				else
 				{
 					snake.Move();
 				}
 
-				Thread.Sleep( 100 );
+				Thread.Sleep( 101 );
 				if ( Console.KeyAvailable )
 				{
 					ConsoleKeyInfo key = Console.ReadKey();
