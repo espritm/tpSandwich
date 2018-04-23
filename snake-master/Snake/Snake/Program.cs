@@ -16,11 +16,11 @@ namespace Snake
 			walls.Draw();
 
 			// CREATION DU PETIT SERPENT			
-			Point p = new Point( 4, 5, '*' );
-			Snake snake = new Snake( p, 4, Direction.RIGHT );
+			Point p = new Point( 10, 10, '*' );
+			Snake snake = new Snake( p, 2, Direction.RIGHT );
 			snake.Draw();
 
-			FoodCreator foodCreator = new FoodCreator( 80, 25, '$' );
+			FoodCreator foodCreator = new FoodCreator( 80, 25, 'ø' );
 			Point food = foodCreator.CreateFood();
 			food.Draw();
 
