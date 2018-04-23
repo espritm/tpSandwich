@@ -23,6 +23,7 @@ namespace Snake
 			this.sym = sym;
 		}
 
+        // hop
 		public Point(Point p)
 		{
 			x = p.x;
