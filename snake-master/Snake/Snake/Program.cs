@@ -56,7 +56,7 @@ namespace Snake
 		{
 			int xOffset = 25;
 			int yOffset = 8;
-			Console.ForegroundColor = ConsoleColor.Red;
+			Console.ForegroundColor = ConsoleColor.DarkMagenta;
 			Console.SetCursorPosition( xOffset, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
 			WriteText( "SNAKE", xOffset + 1, yOffset++ );
