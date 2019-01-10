@@ -61,7 +61,7 @@ namespace Snake
 			WriteText( "============================", xOffset, yOffset++ );
 			WriteText( "SNAKE", xOffset + 1, yOffset++ );
 			yOffset++;
-			WriteText( "Je sais pas lire le Russe", xOffset + 2, yOffset++ );
+			WriteText( "Je sais pas lire le Russe, moi oui !!", xOffset + 2, yOffset++ );
 			WriteText( "Alors j'écris n'importe quoi !", xOffset + 1, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
 		}
