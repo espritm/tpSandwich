@@ -16,7 +16,7 @@ namespace Snake
 			walls.Draw();
 
 			// Отрисовка точек			
-			Point p = new Point( 4, 5, '#' );
+			Point p = new Point( 4, 5, 'O' );
 			Snake snake = new Snake( p, 4, Direction.RIGHT );
 			snake.Draw();
 
