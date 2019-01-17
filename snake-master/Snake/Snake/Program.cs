@@ -59,7 +59,7 @@ namespace Snake
 			Console.ForegroundColor = ConsoleColor.DarkMagenta;
 			Console.SetCursorPosition( xOffset, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
-			WriteText( "Fin du jeu", xOffset + 1, yOffset++ );
+			WriteText( "Fin du jeu mec", xOffset + 1, yOffset++ );
 			yOffset++;
 			WriteText( "Try again", xOffset + 2, yOffset++ );
 			WriteText( "bonne chance", xOffset + 1, yOffset++ );
