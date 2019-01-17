@@ -1,1 +1,11 @@
+﻿<<<<<<< HEAD
 Ce txt va servir pour le tp du cours de versionning
+
+GOKSEN
+=======
+Konuralp YOLGECEN
+
+Je vais utiliser ce dépôt pour le TP de ce cours.
+
+TP versionning
+>>>>>>> 94d20236179a57baa6262571d29c3af88cfffb4d
