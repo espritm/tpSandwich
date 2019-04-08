@@ -15,7 +15,7 @@ namespace Snake
 			Walls walls = new Walls( 80, 25 );
 			walls.Draw();
 
-			// Отрисовка точек			
+			// Depart
 			Point p = new Point( 4, 5, '*' );
 			Snake snake = new Snake( p, 4, Direction.RIGHT );
 			snake.Draw();
@@ -23,6 +23,8 @@ namespace Snake
 			FoodCreator foodCreator = new FoodCreator( 80, 25, ' ' );
 			Point food = foodCreator.CreateFood();
 			food.Draw(ConsoleColor.Green);
+
+            Console.CursorVisible = false;
 
 			while (true)
 			{
@@ -47,7 +49,9 @@ namespace Snake
 					snake.HandleKey( key.Key );
 				}
 			}
-			WriteGameOver();
+            Console.CursorVisible = true;
+
+            WriteGameOver();
 			Console.ReadLine();
       }
 
@@ -58,12 +62,13 @@ namespace Snake
 			int yOffset = 8;
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.SetCursorPosition( xOffset, yOffset++ );
-			WriteText("=========================================", xOffset, yOffset++ );
-			WriteText( "        Game Over.... Réessayez !", xOffset + 1, yOffset++ );
+			WriteText( "============================", xOffset, yOffset++ );
+			WriteText( "Anata ga katta burabō", xOffset + 1, yOffset++ );
 			yOffset++;
-			WriteText( "        Auteur: Un serbe inconnu", xOffset + 2, yOffset++ );
-			WriteText( "Ont participés : étudiants RIL18 Grenoble", xOffset + 1, yOffset++ );
-			WriteText( "=========================================", xOffset, yOffset++ );
+			WriteText( "Chosha: Yagi", xOffset + 2, yOffset++ );
+			WriteText( "Kono bun wa wanadesu", xOffset + 1, yOffset++ );
+			WriteText( "Omae wa mou shinderiu", xOffset + 1, yOffset++ );
+			WriteText( "============================", xOffset, yOffset++ );
 		}
 
 		static void WriteText( String text, int xOffset, int yOffset )
