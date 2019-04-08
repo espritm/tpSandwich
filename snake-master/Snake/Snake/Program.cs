@@ -20,9 +20,9 @@ namespace Snake
 			Snake snake = new Snake( p, 4, Direction.RIGHT );
 			snake.Draw();
 
-			FoodCreator foodCreator = new FoodCreator( 80, 25, '$' );
+			FoodCreator foodCreator = new FoodCreator( 80, 25, ' ' );
 			Point food = foodCreator.CreateFood();
-			food.Draw();
+			food.Draw(ConsoleColor.Green);
 
 			while (true)
 			{
@@ -33,7 +33,7 @@ namespace Snake
 				if(snake.Eat( food ) )
 				{
 					food = foodCreator.CreateFood();
-					food.Draw();
+					food.Draw(ConsoleColor.Green);
 				}
 				else
 				{
@@ -56,14 +56,14 @@ namespace Snake
 		{
 			int xOffset = 25;
 			int yOffset = 8;
-			Console.ForegroundColor = ConsoleColor.DarkBlue;
+			Console.ForegroundColor = ConsoleColor.White;
 			Console.SetCursorPosition( xOffset, yOffset++ );
-			WriteText( "============================", xOffset, yOffset++ );
-			WriteText( "И Г Р А    О К О Н Ч Е Н А", xOffset + 1, yOffset++ );
+			WriteText("=========================================", xOffset, yOffset++ );
+			WriteText( "        Game Over.... Réessayez !", xOffset + 1, yOffset++ );
 			yOffset++;
-			WriteText( "Автор: Евгений Картавец", xOffset + 2, yOffset++ );
-			WriteText( "Специально для GeekBrains", xOffset + 1, yOffset++ );
-			WriteText( "============================", xOffset, yOffset++ );
+			WriteText( "        Auteur: Un serbe inconnu", xOffset + 2, yOffset++ );
+			WriteText( "Ont participés : étudiants RIL18 Grenoble", xOffset + 1, yOffset++ );
+			WriteText( "=========================================", xOffset, yOffset++ );
 		}
 
 		static void WriteText( String text, int xOffset, int yOffset )

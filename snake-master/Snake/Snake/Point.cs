@@ -55,10 +55,12 @@ namespace Snake
 			return p.x == this.x && p.y == this.y;
 		}
 
-		public void Draw()
+		public void Draw(ConsoleColor backgroundColor = ConsoleColor.Black)
 		{
+            Console.BackgroundColor = backgroundColor;
 			Console.SetCursorPosition( x, y );
-			Console.Write( sym );			
+			Console.Write( sym );
+            Console.ResetColor();
 		}
 
 		public void Clear()
