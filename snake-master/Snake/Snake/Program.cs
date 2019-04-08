@@ -15,7 +15,7 @@ namespace Snake
 			Walls walls = new Walls( 80, 25 );
 			walls.Draw();
 
-			// Depart			
+			// Depart
 			Point p = new Point( 4, 5, '*' );
 			Snake snake = new Snake( p, 4, Direction.RIGHT );
 			snake.Draw();
@@ -63,9 +63,11 @@ namespace Snake
 			Console.ForegroundColor = ConsoleColor.DarkBlue;
 			Console.SetCursorPosition( xOffset, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
-			WriteText( "         Game Over", xOffset + 1, yOffset++ );
+			WriteText( "Anata ga katta burabō", xOffset + 1, yOffset++ );
 			yOffset++;
-			WriteText( "        try again", xOffset + 2, yOffset++ );
+			WriteText( "Chosha: Yagi", xOffset + 2, yOffset++ );
+			WriteText( "Kono bun wa wanadesu", xOffset + 1, yOffset++ );
+			WriteText( "Omae wa mou shinderiu", xOffset + 1, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
 		}
 
