@@ -63,6 +63,7 @@ namespace Snake
 			yOffset++;
 			WriteText( "Chosha: Yagi", xOffset + 2, yOffset++ );
 			WriteText( "Kono bun wa wanadesu", xOffset + 1, yOffset++ );
+			WriteText( "Omae wa mou shinderiu", xOffset + 1, yOffset++ );
 			WriteText( "============================", xOffset, yOffset++ );
 		}
 
