@@ -24,6 +24,8 @@ namespace Snake
 			Point food = foodCreator.CreateFood();
 			food.Draw();
 
+            Console.CursorVisible = false;
+
 			while (true)
 			{
 				if ( walls.IsHit(snake) || snake.IsHitTail() )
@@ -47,7 +49,9 @@ namespace Snake
 					snake.HandleKey( key.Key );
 				}
 			}
-			WriteGameOver();
+            Console.CursorVisible = true;
+
+            WriteGameOver();
 			Console.ReadLine();
       }
 
