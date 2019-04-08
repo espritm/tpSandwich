@@ -25,7 +25,8 @@ namespace Snake
 		{
 			int x = random.Next( 2, mapWidht - 2 );
 			int y = random.Next( 2, mapHeight - 2 );
-			return new Point( x, y, sym );
+			Point p = new Point( x, y, sym );
+            return p;
 		}
 	}
 }
